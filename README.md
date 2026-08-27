@@ -4,10 +4,6 @@
 
 Build a responsive profile card component based on the provided design.
 
-### Screenshot
-
-![Profile Card Screenshot](./images/preview.png)
-
 ### Links
 
 - Live Site: [View Live Site]()
