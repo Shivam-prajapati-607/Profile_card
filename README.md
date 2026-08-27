@@ -6,7 +6,7 @@ Build a responsive profile card component based on the provided design.
 
 ### Links
 
-- Live Site: [View Live Site]()
+- Live Site: [View Live Site](https://shivam-prajapati-607.github.io/Profile_card/)
 - GitHub: [View Repository](https://github.com/Shivam-prajapati-607)
 
 ## My process
