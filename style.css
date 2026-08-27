@@ -1,0 +1,134 @@
+:root{
+    --clr-primary-Blue: hsl(185, 75%, 39%);
+    --clr-primary-Navy: hsl(229, 23%, 23%);
+    --clr-primary-Gray: hsl(227, 10%, 46%);
+    --clr-neutral-Gray: hsl(225, 10%, 92%);
+    --fs-body:18px;
+    --fw-regular:400;
+    --fw-bold:700;
+    --ff-main:'Kumbh Sans',sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0.5rem;
+    font-family: var(--ff-main);
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--clr-primary-Blue);
+    overflow: hidden;
+    padding-inline: 10px;
+    width: 100%;
+}
+.pattern {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    flex-shrink: 0;
+    pointer-events: none;
+}
+
+.pattern img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.top {
+    top: -450px;
+    left: 50%;
+    transform: translateX(-790px);
+}
+
+
+.bottom {
+    bottom: -540px;
+    left: 50%;
+    transform: translateX(10px);
+}
+.profile{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 1rem;
+    transform: translate(-50%, -50%);
+    background-color: var(--clr-neutral-Gray);
+    overflow: hidden;
+    max-width: 350px;
+}
+.about{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 3.5rem;
+}
+.about img{
+    margin-bottom: 1.2rem;
+    border-radius: 50%;
+    border: 5px solid var(--clr-neutral-Gray);  
+}
+.stat-number,.name{
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-Navy);
+    font-size: var(--fs-body);
+}
+.main-stat{
+    display: flex;
+    justify-content: space-evenly;
+}
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: var(--fw-regular);
+    padding-bottom: 1.5rem;
+}
+.about span{
+    color: var(--clr-primary-Gray);
+}
+.stat-label{
+    color: var(--clr-primary-Gray);
+    margin-top: 5px;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+}
+.about .stat-label{
+    margin-top: 8px;
+}
+.line{
+    border: none;
+    border-top: 1px solid var(--clr-primary-Blue);
+    position: relative;
+    top:-25px
+}
+footer{
+    font-size: 0.6875rem;
+    text-align: center;
+    background-color: var(--clr-primary-Blue);
+}
+footer a{
+    color: hsl(228, 45%, 44%);
+}
+@media (max-width:390px) {
+    .container{
+    height: 800px;
+    }
+    .profile{
+    width:90%;
+    }
+    .top{
+    top: -360px;
+    left: 30%;
+    transform: translateX(-720px);
+    }
+    .bottom{
+    bottom: -380px;
+    left: 50%;
+    transform: translateX(-20px);
+    }
+}
